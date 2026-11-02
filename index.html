@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Latihan Layout Bootstrap</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <style>
+        body { color: #333; }
+        .bg-ungu { background: #010140; color: white; }
+        .hero { padding: 60px 0; }
+        .card-konten h2 { font-size: 1.4rem; margin-top: 15px; }
+        footer { padding: 15px 0; }
+    </style>
+</head>
+<body>
+
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-md-12 p-0">
+            <nav class="navbar navbar-expand-md navbar-dark bg-ungu">
+                <a class="navbar-brand font-weight-bold" href="#">Latihan Web</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuUtama"
+                        aria-controls="menuUtama" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuUtama">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="#beranda">Beranda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#konten">Konten</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dd" data-toggle="dropdown">Layanan</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Layanan 1</a>
+                                <a class="dropdown-item" href="#">Layanan 2</a>
+                                <a class="dropdown-item" href="#">Layanan 3</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <div class="row" id="beranda">
+        <div class="col-md-12 text-center hero bg-light">
+            <h1 class="display-4">Latihan Layout Bootstrap</h1>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="#kontak" class="btn btn-primary bg-ungu btn-lg">Hubungi Kami</a>
+        </div>
+    </div>
+
+    <div class="container" id="konten">
+
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h2>Konten 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
+                <p>Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.</p>
+            </div>
+        </div>
+
+        <div class="row mt-4 card-konten">
+            <div class="col-md-4 col-sm-6">
+                <h2>Konten 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis.</p>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <h2>Konten 3</h2>
+                <p>Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa.</p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <h2>Konten 4</h2>
+                <p>Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh.</p>
+            </div>
+        </div>
+
+        <div class="row mt-5" id="kontak">
+            <div class="col-md-12">
+                <h5>Contoh Form Grid</h5>
+
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="nama">Nama</label>
+                            <input type="text" class="form-control" id="nama" placeholder="Nama">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" id="username" placeholder="Username">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="telp">No. Telepon</label>
+                            <input type="number" class="form-control" id="telp" placeholder="No. Telepon">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="kota">Kota</label>
+                            <select class="form-control" id="kota">
+                                <option>Bandung</option>
+                                <option>Jakarta</option>
+                                <option>Sumedang</option>
+                                <option>Indramayu</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pesan">Pesan</label>
+                        <textarea class="form-control" id="pesan" rows="3" placeholder="Lorem ipsum dolor sit amet..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary bg-ungu">Kirim</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-12 bg-ungu text-center">
+            <footer>
+                <p class="mb-0">Copyright &copy; 2026 Muhammad Ikhsan Pradiptianto | Universitas Teknologi Bandung</p>
+            </footer>
+        </div>
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
